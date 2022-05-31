@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change on Button Click </title>
+</head>
+<body>
+    <h2>Javascript change on button Click</h2>
+    <p id="message">Java Script Is Simple</p>
+    <br>
+    <button type="button" onclick="ChangeParagraph()">Click ME</button>
+    <button type="button" onclick="refresh()">REFRESH</button>
+    <script>
+        function ChangeParagraph(){
+            document.getElementById("message").innerHTML = "Javascript Is Client Side Scripting Language";
+        }
+
+        function refresh(){
+            location.reload();  //we can directly put this  method in **onClick** in button. 
+        }
+    </script>
+</body>
+</html>
